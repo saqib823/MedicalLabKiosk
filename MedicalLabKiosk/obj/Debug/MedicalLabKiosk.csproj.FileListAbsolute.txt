@@ -46,3 +46,21 @@ D:\Applications\MedicalLabKiosk\MedicalLabKiosk\MedicalLabKiosk\obj\Debug\Medica
 D:\Applications\MedicalLabKiosk\MedicalLabKiosk\MedicalLabKiosk\obj\Debug\MedicalLabKiosk.csproj.CoreCompileInputs.cache
 D:\Applications\MedicalLabKiosk\MedicalLabKiosk\MedicalLabKiosk\obj\Debug\MedicalLabKiosk.exe
 D:\Applications\MedicalLabKiosk\MedicalLabKiosk\MedicalLabKiosk\obj\Debug\MedicalLabKiosk.pdb
+F:\Saqib\Projects\VS Projects\MedicalLabKiosk\MedicalLabKiosk\MedicalLabKiosk\bin\Debug\MedicalLabKiosk.exe.config
+F:\Saqib\Projects\VS Projects\MedicalLabKiosk\MedicalLabKiosk\MedicalLabKiosk\bin\Debug\MedicalLabKiosk.exe
+F:\Saqib\Projects\VS Projects\MedicalLabKiosk\MedicalLabKiosk\MedicalLabKiosk\bin\Debug\MedicalLabKiosk.pdb
+F:\Saqib\Projects\VS Projects\MedicalLabKiosk\MedicalLabKiosk\MedicalLabKiosk\obj\Debug\MainWindow.g.cs
+F:\Saqib\Projects\VS Projects\MedicalLabKiosk\MedicalLabKiosk\MedicalLabKiosk\obj\Debug\Test.g.cs
+F:\Saqib\Projects\VS Projects\MedicalLabKiosk\MedicalLabKiosk\MedicalLabKiosk\obj\Debug\App.g.cs
+F:\Saqib\Projects\VS Projects\MedicalLabKiosk\MedicalLabKiosk\MedicalLabKiosk\obj\Debug\MedicalLabKiosk_MarkupCompile.cache
+F:\Saqib\Projects\VS Projects\MedicalLabKiosk\MedicalLabKiosk\MedicalLabKiosk\obj\Debug\MedicalLabKiosk_MarkupCompile.lref
+F:\Saqib\Projects\VS Projects\MedicalLabKiosk\MedicalLabKiosk\MedicalLabKiosk\obj\Debug\App.baml
+F:\Saqib\Projects\VS Projects\MedicalLabKiosk\MedicalLabKiosk\MedicalLabKiosk\obj\Debug\MainWindow.baml
+F:\Saqib\Projects\VS Projects\MedicalLabKiosk\MedicalLabKiosk\MedicalLabKiosk\obj\Debug\Test.baml
+F:\Saqib\Projects\VS Projects\MedicalLabKiosk\MedicalLabKiosk\MedicalLabKiosk\obj\Debug\MedicalLabKiosk.g.resources
+F:\Saqib\Projects\VS Projects\MedicalLabKiosk\MedicalLabKiosk\MedicalLabKiosk\obj\Debug\MedicalLabKiosk.Properties.Resources.resources
+F:\Saqib\Projects\VS Projects\MedicalLabKiosk\MedicalLabKiosk\MedicalLabKiosk\obj\Debug\MedicalLabKiosk.csproj.GenerateResource.cache
+F:\Saqib\Projects\VS Projects\MedicalLabKiosk\MedicalLabKiosk\MedicalLabKiosk\obj\Debug\MedicalLabKiosk.csproj.CoreCompileInputs.cache
+F:\Saqib\Projects\VS Projects\MedicalLabKiosk\MedicalLabKiosk\MedicalLabKiosk\obj\Debug\MedicalLabKiosk.exe
+F:\Saqib\Projects\VS Projects\MedicalLabKiosk\MedicalLabKiosk\MedicalLabKiosk\obj\Debug\MedicalLabKiosk.pdb
+F:\Saqib\Projects\VS Projects\MedicalLabKiosk\MedicalLabKiosk\MedicalLabKiosk\obj\Debug\MedicalLabKiosk.csprojAssemblyReference.cache

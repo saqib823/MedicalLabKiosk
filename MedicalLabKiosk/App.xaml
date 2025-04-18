@@ -11,7 +11,7 @@
             <!-- A darker purple -->
             <Color x:Key="PrimaryPurpleColor">#9534A6</Color>
             <!-- BlueViolet approx -->
-            <Color x:Key="LighterPurpleColor">#9370DB</Color>
+            <Color x:Key="LighterPurpleColor">#B751C9</Color>
             <!-- MediumPurple approx -->
             <Color x:Key="AccentPinkColor">#D94A8C</Color>
             <!-- Approx pink for highlight -->
@@ -43,6 +43,12 @@
             <LinearGradientBrush x:Key="SidebarGradientBrush" StartPoint="0,0" EndPoint="0,1">
                 <GradientStop Color="{StaticResource DarkerPurpleColor}" Offset="0.0" />
                 <GradientStop Color="{StaticResource PrimaryPurpleColor}" Offset="0.5" />
+                <GradientStop Color="{StaticResource LighterPurpleColor}" Offset="1.0" />
+            </LinearGradientBrush>
+
+            <LinearGradientBrush x:Key="InnerSidebarGradientBrush" StartPoint="0,0" EndPoint="0,1">
+                <GradientStop Color="#4E0E59" Offset="0.0" />
+                <GradientStop Color="#8A3299" Offset="0.5" />
                 <GradientStop Color="{StaticResource LighterPurpleColor}" Offset="1.0" />
             </LinearGradientBrush>
 
@@ -176,16 +182,49 @@
                         <ControlTemplate TargetType="{x:Type ProgressBar}">
                             <Grid x:Name="TemplateRoot">
                                 <Border Background="#E0E0E0" CornerRadius="5" Height="10"/>
-                                <Border x:Name="PART_Indicator"
-                                        Background="{StaticResource ProgressBarBrush}"
-                                        CornerRadius="5"
-                                        HorizontalAlignment="Left"
-                                        Height="10"/>
+                                <!-- Fill Background (the actual progress) -->
+                                <Border x:Name="PART_Track" Background="Transparent" CornerRadius="5">
+                                    <Grid>
+                                        <Rectangle x:Name="PART_Indicator"
+                                       Fill="{StaticResource ProgressBarBrush}"
+                                       RadiusX="5" RadiusY="5"
+                                       HorizontalAlignment="Left"
+                                       Height="10"
+                                       Width="0"/>
+                                    </Grid>
+                                </Border>
                             </Grid>
                         </ControlTemplate>
                     </Setter.Value>
                 </Setter>
             </Style>
+
+            <!--<Style x:Key="CustomProgressBarStyle" TargetType="{x:Type ProgressBar}">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type ProgressBar}">
+                            <Grid x:Name="TemplateRoot" ClipToBounds="true" Height="10">
+                                --><!-- Track Background --><!--
+                                <Border Background="#E0E0E0" CornerRadius="5"/>
+
+                                --><!-- Fill Background (the actual progress) --><!--
+                                <Border x:Name="PART_Track" Background="Transparent" CornerRadius="5">
+                                    <Grid>
+                                        <Rectangle x:Name="PART_Indicator"
+                                       Fill="{StaticResource ProgressBarBrush}"
+                                       RadiusX="5" RadiusY="5"
+                                       HorizontalAlignment="Left"
+                                       Height="10"
+                                       Width="0"/>
+                                    </Grid>
+                                </Border>
+                            </Grid>
+
+                            
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>-->
 
         </ResourceDictionary>
     </Application.Resources>
