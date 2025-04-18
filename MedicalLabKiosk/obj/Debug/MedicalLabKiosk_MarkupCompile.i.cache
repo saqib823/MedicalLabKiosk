@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Applications\MedicalLabKiosk\MedicalLabKiosk\obj\Debug\
+D:\Applications\MedicalLabKiosk\MedicalLabKiosk\MedicalLabKiosk\obj\Debug\
 MedicalLabKiosk
 none
 false
 DEBUG;TRACE
-D:\Applications\MedicalLabKiosk\MedicalLabKiosk\App.xaml
-11151548125
+D:\Applications\MedicalLabKiosk\MedicalLabKiosk\MedicalLabKiosk\App.xaml
+2-9711333
 
-6-1192229921
+7-380050444
 131726951844
-MainWindow.xaml;
+MainWindow.xaml;TestFile.xaml;
 
-False
+True
 
