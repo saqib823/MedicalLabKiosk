@@ -112,7 +112,19 @@
     <Resource Include="assets\images\button_image.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="assets\images\user_icon_sm.png" />
+    <Resource Include="assets\images\height_weight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\images\temperature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\images\body_composition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\images\blood_oxygen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\images\egg.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
