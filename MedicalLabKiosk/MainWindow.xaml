@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MedicalLabKiosk"
         mc:Ignorable="d"
-        Title="Medical Lab Kiosk" Height="600" Width="1000"
+        Title="Medical Lab Kiosk" Height="800" Width="1200"
         WindowStyle="None" AllowsTransparency="True" Background="Transparent"
         MouseDown="Window_MouseDown"
         WindowStartupLocation="CenterScreen">
@@ -51,9 +51,9 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <!-- Top Bar -->
-                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="83*"/>
                     <!-- Title Section -->
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="476*"/>
                     <!-- Cards -->
                     <RowDefinition Height="Auto"/>
                     <!-- Buttons -->
@@ -80,34 +80,34 @@
                         <!--<Border CornerRadius="20" BorderBrush="Orange" BorderThickness="3" Padding="10" HorizontalAlignment="Left" VerticalAlignment="Center"></Border>-->
                         <StackPanel VerticalAlignment="Center">
                             <TextBlock Text="Hello" FontSize="{StaticResource FontSizeMedium}" Foreground="{StaticResource ForegroundGrayBrush}"/>
-                            <TextBlock Text="Johne" FontSize="{StaticResource FontSizeLarge}" FontWeight="SemiBold"/>
+                            <TextBlock Text="Johne" FontFamily="{StaticResource PrimaryFont}" Foreground="{StaticResource ForegroundDarkBrush}" FontSize="{StaticResource FontSizeLarge}" FontWeight="SemiBold"/>
                         </StackPanel>
                     </StackPanel>
 
-                    
+
                     <!-- Progress -->
-                    <Border Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Background="{StaticResource ForegroundLightBrush}" CornerRadius="20" Padding="10,5,10,5">
-                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
-                        <Ellipse Width="25" Height="27" Margin="0,0,5,0">
-                            <Ellipse.Fill>
-                                <!-- Placeholder for user image -->
-                                <ImageBrush ImageSource="/assets/images/user_icon_sm.png" />
-                            </Ellipse.Fill>
-                        </Ellipse>
-                        <TextBlock Text="Your progress" VerticalAlignment="Center" Margin="0,0,10,0" Foreground="{StaticResource ForegroundGrayBrush}" FontSize="{StaticResource FontSizeMedium}"/>
-                        <!-- Simple person icon -->
-                        <ProgressBar Value="60" Maximum="100" Width="250" Style="{StaticResource CustomProgressBarStyle}" VerticalAlignment="Center"/>
-                    </StackPanel>
+                    <Border BorderBrush="{StaticResource BorderLightBrush}" BorderThickness="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Background="{StaticResource ForegroundLightBrush}" CornerRadius="20" Padding="10,5,10,5" Margin="265,8,65,8">
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <Ellipse Width="25" Height="27" Margin="0,0,5,0">
+                                <Ellipse.Fill>
+                                    <!-- Placeholder for user image -->
+                                    <ImageBrush ImageSource="/assets/images/user_icon_sm.png" />
+                                </Ellipse.Fill>
+                            </Ellipse>
+                            <TextBlock Text="Your progress" VerticalAlignment="Center" Margin="0,0,10,0" Foreground="{StaticResource ForegroundGrayBrush}" FontSize="{StaticResource FontSizeMedium}"/>
+                            <!-- Simple person icon -->
+                            <ProgressBar Value="60" Maximum="100" Width="250" Style="{StaticResource CustomProgressBarStyle}" VerticalAlignment="Center"/>
+                        </StackPanel>
                     </Border>
                     <!-- Next Arrow Button -->
-                    <Button Grid.Column="1" Style="{StaticResource {x:Type Button}}" Background="{StaticResource ForegroundLightBrush}" BorderBrush="{StaticResource BorderLightBrush}" Padding="10" MinWidth="40" Width="40" Height="40" BorderThickness="0" Grid.ColumnSpan="2" Margin="480,8,8,8">
-                        <TextBlock Text="" FontFamily="Segoe MDL2 Assets" FontSize="{StaticResource FontSizeSmall}" Foreground="{StaticResource PrimaryPurpleBrush}"/>
+                    <Button Grid.Column="1" Style="{StaticResource {x:Type Button}}" Background="{StaticResource ForegroundLightBrush}" BorderBrush="{StaticResource BorderLightBrush}" Padding="10" MinWidth="40" Width="40" Height="40" BorderThickness="1" Margin="685,8,14,8">
+                        <TextBlock Text="" FontFamily="Segoe MDL2 Assets" FontSize="{StaticResource FontSizeMedium}" Foreground="{StaticResource PrimaryPurpleBrush}"/>
                         <!-- Right Arrow -->
                     </Button>
                 </Grid>
 
                 <!-- Title Section -->
-                <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="10,20,0,20">
+                <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="278,0,268,350" HorizontalAlignment="Center" VerticalAlignment="Center">
                     <!-- Placeholder Head Icon -->
                     <!--<Path Data="M12,2C6.48,2 2,6.48 2,12C2,17.52 6.48,22 12,22C17.52,22 22,17.52 22,12C22,6.48 17.52,2 12,2ZM13,17H11V15H13V17ZM13,13H11V7H13V13Z M17,12H15V10H17V12Z M7,12H9V10H7V12Z"
                             Fill="{StaticResource AccentPinkBrush}" Width="40" Height="40" Stretch="Uniform" VerticalAlignment="Center"/>-->
@@ -123,7 +123,7 @@
                 </StackPanel>
 
                 <!-- Data Cards -->
-                <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,10,0,30" VerticalAlignment="Top">
+                <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,200,0,0" VerticalAlignment="Top">
 
                     <!-- Card 1: Extracellular fluid -->
                     <Border Style="{StaticResource CardBorderStyle}" MinWidth="250">
@@ -137,7 +137,7 @@
 
                             <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0,0,0,15">
                                 <!-- Placeholder Icon -->
-                                <TextBlock Text="💧" FontSize="{StaticResource FontSizeXL}" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                                <TextBlock Text="💧" Style="{StaticResource CardValueStyle}" FontSize="{StaticResource FontSizeXL}" VerticalAlignment="Center" Margin="0,0,10,0"/>
                                 <TextBlock Text="Extracellular fluid" Style="{StaticResource CardTitleStyle}"/>
                             </StackPanel>
 
@@ -179,7 +179,7 @@
 
                             <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0,0,0,15">
                                 <!-- Placeholder Icon -->
-                                <TextBlock Text="💎" FontSize="{StaticResource FontSizeXL}" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                                <TextBlock Text="💎" Style="{StaticResource CardValueStyle}" FontSize="{StaticResource FontSizeXL}" VerticalAlignment="Center" Margin="0,0,10,0"/>
                                 <!-- Placeholder Mineral icon -->
                                 <TextBlock Text="Mineral" Style="{StaticResource CardTitleStyle}"/>
                             </StackPanel>
@@ -218,7 +218,7 @@
 
                             <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0,0,0,15">
                                 <!-- Placeholder Icon -->
-                                <TextBlock Text="💧" FontSize="{StaticResource FontSizeXL}" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                                <TextBlock Text="💧" Style="{StaticResource CardValueStyle}" FontSize="{StaticResource FontSizeXL}" VerticalAlignment="Center" Margin="0,0,10,0"/>
                                 <!-- Placeholder Glucose/Blood icon -->
                                 <TextBlock Text="Glucose" Style="{StaticResource CardTitleStyle}"/>
                             </StackPanel>
@@ -241,23 +241,24 @@
                             <TextBlock Text="4.9" Style="{StaticResource CardValueStyle}" Grid.Row="2"/>
                             <TextBlock Text="mmol/L" Style="{StaticResource CardUnitStyle}" Grid.Row="3"/>
 
-                            <!-- Status would normally be here -->
-                            <!-- <TextBlock Text="Normal" Style="{StaticResource CardStatusStyle}" Grid.Row="2" Grid.RowSpan="2" VerticalAlignment="Bottom" Margin="0,0,0,5"/> -->
+                            <TextBlock Text="Normal" Style="{StaticResource CardStatusStyle}" Grid.Row="2" Grid.RowSpan="2" VerticalAlignment="Bottom" Margin="0,0,0,5"/>
                         </Grid>
                     </Border>
 
                 </StackPanel>
 
                 <!-- Action Buttons -->
-                <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,20,0,10">
-                    <Button Content="Repeat Test" Style="{StaticResource OutlineButtonStyle}" Margin="0,0,20,0">
-                        <!--<StackPanel Orientation="Horizontal">
-                            <TextBlock Text="" FontFamily="Segoe MDL2 Assets" Margin="0,0,8,0" VerticalAlignment="Center"/>
-                             Refresh icon 
+                <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="260,450,260,38">
+                    <Button Style="{StaticResource OutlineButtonStyle}" Margin="0,0,20,0">
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            <!--Refresh icon image-->
+                            <!--<Image Source="/assets/images/user_image.png" Width="16" Height="16" Margin="0,0,5,0"/>-->
+                            <!--Refresh icon-->
+                            <TextBlock Text="" FontFamily="Segoe MDL2 Assets" Margin="0,0,5,0" VerticalAlignment="Center"/>
                             <TextBlock Text="Repeat Test" VerticalAlignment="Center"/>
-                        </StackPanel>-->
+                        </StackPanel>
                     </Button>
-                    <Button Content="Next Test" Style="{StaticResource FilledButtonStyle}"/>
+                    <Button Content="Next Test" Style="{StaticResource FilledButtonStyle}" BorderThickness="0"/>
                 </StackPanel>
 
             </Grid>

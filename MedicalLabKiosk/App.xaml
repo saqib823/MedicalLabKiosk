@@ -47,8 +47,8 @@
             </LinearGradientBrush>
 
             <LinearGradientBrush x:Key="InnerSidebarGradientBrush" StartPoint="0,0" EndPoint="0,1">
-                <GradientStop Color="#4E0E59" Offset="0.0" />
-                <GradientStop Color="#8A3299" Offset="0.5" />
+                <GradientStop Color="#6C1E79" Offset="0.0" />
+                <GradientStop Color="#862F95" Offset="0.5" />
                 <GradientStop Color="{StaticResource LighterPurpleColor}" Offset="1.0" />
             </LinearGradientBrush>
 
@@ -63,11 +63,11 @@
             <sys:Double x:Key="FontSizeXXL">32</sys:Double>
 
             <!-- Base TextBlock Style -->
-            <Style TargetType="TextBlock">
+            <!--<Style TargetType="TextBlock">
                 <Setter Property="FontFamily" Value="{StaticResource PrimaryFont}"/>
                 <Setter Property="Foreground" Value="{StaticResource ForegroundDarkBrush}"/>
                 <Setter Property="VerticalAlignment" Value="Center"/>
-            </Style>
+            </Style>-->
 
             <!-- Sidebar Text Style -->
             <Style x:Key="SidebarTextStyle" TargetType="TextBlock" BasedOn="{StaticResource {x:Type TextBlock}}">
@@ -88,6 +88,8 @@
                 <Setter Property="FontSize" Value="{StaticResource FontSizeXL}"/>
                 <Setter Property="FontWeight" Value="Bold"/>
                 <Setter Property="Margin" Value="0,5,0,0"/>
+                <Setter Property="FontFamily" Value="{StaticResource PrimaryFont}"/>
+                <Setter Property="Foreground" Value="{StaticResource ForegroundDarkBrush}"/>
             </Style>
 
             <!-- Card Unit/Status Style -->
@@ -114,9 +116,9 @@
             <Style TargetType="Button">
                 <Setter Property="Padding" Value="20,12"/>
                 <Setter Property="FontSize" Value="{StaticResource FontSizeLarge}"/>
-                <Setter Property="FontWeight" Value="SemiBold"/>
+                <Setter Property="FontWeight" Value="Normal"/>
                 <Setter Property="Cursor" Value="Hand"/>
-                <Setter Property="BorderThickness" Value="2"/>
+                <Setter Property="BorderThickness" Value="1"/>
                 <Setter Property="HorizontalAlignment" Value="Center"/>
                 <Setter Property="VerticalAlignment" Value="Center"/>
                 <Setter Property="MinWidth" Value="150"/>
@@ -198,33 +200,6 @@
                     </Setter.Value>
                 </Setter>
             </Style>
-
-            <!--<Style x:Key="CustomProgressBarStyle" TargetType="{x:Type ProgressBar}">
-                <Setter Property="Template">
-                    <Setter.Value>
-                        <ControlTemplate TargetType="{x:Type ProgressBar}">
-                            <Grid x:Name="TemplateRoot" ClipToBounds="true" Height="10">
-                                --><!-- Track Background --><!--
-                                <Border Background="#E0E0E0" CornerRadius="5"/>
-
-                                --><!-- Fill Background (the actual progress) --><!--
-                                <Border x:Name="PART_Track" Background="Transparent" CornerRadius="5">
-                                    <Grid>
-                                        <Rectangle x:Name="PART_Indicator"
-                                       Fill="{StaticResource ProgressBarBrush}"
-                                       RadiusX="5" RadiusY="5"
-                                       HorizontalAlignment="Left"
-                                       Height="10"
-                                       Width="0"/>
-                                    </Grid>
-                                </Border>
-                            </Grid>
-
-                            
-                        </ControlTemplate>
-                    </Setter.Value>
-                </Setter>
-            </Style>-->
 
         </ResourceDictionary>
     </Application.Resources>

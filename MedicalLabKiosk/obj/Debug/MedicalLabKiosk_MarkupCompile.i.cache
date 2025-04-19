@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-F:\Saqib\Projects\VS Projects\MedicalLabKiosk\MedicalLabKiosk\MedicalLabKiosk\obj\Debug\
+D:\Applications\MedicalLabKiosk\MedicalLabKiosk\MedicalLabKiosk\obj\Debug\
 MedicalLabKiosk
 none
 false
 DEBUG;TRACE
-F:\Saqib\Projects\VS Projects\MedicalLabKiosk\MedicalLabKiosk\MedicalLabKiosk\App.xaml
+D:\Applications\MedicalLabKiosk\MedicalLabKiosk\MedicalLabKiosk\App.xaml
 21450300940
 
-10479464412
+71335251369
 131569487696
 MainWindow.xaml;Test.xaml;
 
-True
+False
 

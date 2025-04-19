@@ -64,3 +64,5 @@ F:\Saqib\Projects\VS Projects\MedicalLabKiosk\MedicalLabKiosk\MedicalLabKiosk\ob
 F:\Saqib\Projects\VS Projects\MedicalLabKiosk\MedicalLabKiosk\MedicalLabKiosk\obj\Debug\MedicalLabKiosk.exe
 F:\Saqib\Projects\VS Projects\MedicalLabKiosk\MedicalLabKiosk\MedicalLabKiosk\obj\Debug\MedicalLabKiosk.pdb
 F:\Saqib\Projects\VS Projects\MedicalLabKiosk\MedicalLabKiosk\MedicalLabKiosk\obj\Debug\MedicalLabKiosk.csprojAssemblyReference.cache
+D:\Applications\MedicalLabKiosk\MedicalLabKiosk\MedicalLabKiosk\obj\Debug\Test.g.cs
+D:\Applications\MedicalLabKiosk\MedicalLabKiosk\MedicalLabKiosk\obj\Debug\Test.baml
